@@ -6,8 +6,7 @@ https://jasmine.github.io/
 # Instruction
 1. Download this repository
 2. Open index.html in your browser to see the results
-3. Make sure jasmine options do not have a random test order.
-4. The suites and test are located on jasmine/spec/feedreader.js
+3. The suites and test are located on jasmine/spec/feedreader.js
 
 # Contributing
 
