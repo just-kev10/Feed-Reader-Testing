@@ -90,12 +90,20 @@ $(function () {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+        beforeEach(function (done) {
+            loadFeed(0, done);
+        });
 
-        /* TODO: Write a new test suite named "New Feed Selection" */
-
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
-         */
+        it('has more than 0', function () {
+            expect($('.feed .entry').length).toBeGreaterThan(0);
+        });
     });
+
+    /* TODO: Write a new test suite named "New Feed Selection" */
+
+    /* TODO: Write a test that ensures when a new feed is loaded
+     * by the loadFeed function that the content actually changes.
+     * Remember, loadFeed() is asynchronous.
+     */
+
 }());
